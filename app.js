@@ -10,6 +10,8 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 app.listen(port, () => {
     console.log(`App running at http://localhost:${port}`);
 });
